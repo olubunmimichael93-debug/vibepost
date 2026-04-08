@@ -1,0 +1,1 @@
+Vibe post is for posting blog stories. It was built with html, tailwindcss and react
