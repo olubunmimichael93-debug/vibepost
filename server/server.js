@@ -19,7 +19,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://vibepost.onrender.com',
   credentials: true
 }));
 app.use(express.json());
@@ -39,7 +39,7 @@ const PORT = process.env.PORT || 5000;
 
 const server = app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
-  console.log(`📍 http://localhost:${PORT}`);
+  console.log(`📍 https://vibepost.onrender.com:${PORT}`);
 });
 
 // Handle unhandled promise rejections
