@@ -18,10 +18,14 @@ const shareRoutes = require('./routes/shares');
 const app = express();
 
 // Middleware
-app.use(cors({
-  origin: 'https://vibepostt.vercel.app/',
-  credentials: true
-}));
+// app.use(cors({
+//   origin: [
+//     'https://vibepostt.vercel.app',
+//     'http://localhost:5173'
+//   ],
+//   credentials: true
+// }));
+app.use(cors());
 app.use(express.json());
 
 // Mount routes
