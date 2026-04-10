@@ -19,7 +19,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'https://vibepost.onrender.com',
+  origin: 'https://vibepostt.vercel.app/',
   credentials: true
 }));
 app.use(express.json());
